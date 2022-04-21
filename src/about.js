@@ -1,0 +1,19 @@
+export function aboutUs() {
+    const container=document.querySelector('.container');
+    const about=document.createElement('div');
+    about.className="aboutDetails";
+    const header=document.createElement('div');
+    header.innerHTML="WHO WE ARE & WHAT <br /> WE ARE ABOUT"
+    header.className="aboutHeader";
+    const content=document.createElement('div');
+    content.className="aboutContent";
+    content.innerHTML=`<p>A true neighborhood restaurant, Da Claudio welcomes downtown regulars, local businesses and visitors from the world over with open arms. Walk off of historic Ann Street, in the heart of Manhattan’s financial district, into a warm, light and airy space. And let Linda and Claudio Marini share their love of delicious food, drink and hospitality. Their locally-sourced seasonal Italian menu enhances market fare with the finest imports from Italy. Their beautiful bar serves lovingly crafted cocktails, Italian wines and small plates. Full service tables brim with fresh pastas, meats and seafood. And the restaurant offers a full take-out and delivery menu. Linda and Claudio are passionate about tradition as well as innovation in their cuisine. And they radiate this passion to their guests. A meal at Da Claudio is an elegant, yet deeply comfortable experience. After six wonderful years in the neighborhood, Da Claudio is a downtown classic.</p>
+    <h3>CLAUDIO</h3>
+    <p>A native of Sanremo, Italy, where he attended hotel school and worked in 5 Star hotels, Claudio Marini came to New York in 1989 with dreams of opening his own restaurant. After waiting tables at Mezzogiorno in SoHo on the advice of the cab driver who drove him to town from the airport, his first venture was a homespun, wildly successful panini and pasta shop run out of a tiny midtown basement. From that location, he won the heart of Linda Chen Marini by sending heart-shaped pizzas to her in her office at Barneys, where she was a rising star as a fashion buyer. In 1998, Claudio named his first real restaurant, Caffe Linda, after his soon to be bride. Claudio and Linda owned Caffe Linda until 2015, when they decided to focus all their energies on Da Claudio. From 2006 to 2012, they also owned Barbarini Alimentari & Mercato, located on historic Front Street in the Seaport, a neighborhood institution until it was completely destroyed by Superstorm Sandy. Following this tragedy, with the support of many loyal customers, Linda and Claudio built Da Claudio on higher ground on Ann Street. Their persistence paid off. It was an instant hit. Claudio wants nothing more than to greet you warmly at the door of Da Claudio and to share his delicious food and wine with you in the comfort of his “home.”</p>
+    <h3>LINDA</h3>
+    <p>Linda Chen Marini was born in Urumqi, China, and immigrated to New York City as a little girl with her parents. She grew up bilingual and bicultural. Linda attended Laguardia High School for fine arts then spent four college years in Rome, Italy, where she became fluent in Italian and fell in love with the language, culture, fashion and food. After graduate school back in New York at FIT, Linda began her stellar career as a buyer at Barneys. After Claudio’s heart-shaped pizzas led to a set of twins, Linda left the fashion world to join Claudio and focus on running the business side of the restaurants. Linda not only brings business savvy and a great design sense to Da Claudio, but a deep appreciation of food, wine and all things Italian. Like Claudio, she is a lover of downtown and a lover of people. Her enthusiasm is irresistable! Linda and Claudio are joyful and welcoming. At Da Claudio, they radiate gratitude for friends, neighbors and customers. Their love comes through in every aspect of the fabulous food and wonderful service.</p>`;
+    container.style.backgroundImage="url('../images/squidink.jpg')";
+    about.appendChild(header);
+    about.appendChild(content);
+    container.appendChild(about);
+}

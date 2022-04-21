@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Neutraface' ;
+    src: url('../font/Neutra-Text-Book.otf');
+}
+@font-face {
+    font-family: 'Neutraface TF' ;
+    src: url('../font/Neutra-Text-TF-Book.otf');
+}
+@font-face {
+    font-family: 'Neutraface Demi' ;
+    src: url('../font/Neutra-Text-TF-Demi.otf');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Neutraface';
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/caccio.jpg');
+    transition: background-image 1s;
+    background-size: cover;
+    padding: 50px;
+}
+
+.aboutDetails {
+    width: 70vw;
+    transition: 2s;
+}
+
+.aboutHeader {
+    background-color: rgba(255,255,255,0.7);
+    font-size: 30px;
+    padding: 20px;
+}
+
+.aboutContent {
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    padding-left: 100px;
+}
+
+.aboutContent h3 {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.aboutContent p {
+    font-size: 1.2rem;
+}
+
+.logo {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.header h1 {
+    text-align: left;
+    font-size: 40px;
+    align-items: center;
+    margin: 0px;
+    font-family: 'Neutraface TF';
+}
+.header h4 {
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin: 0px;
+    font-family: 'Neutraface';
+}
+.links {
+    display: grid;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding-right: 0px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Neutraface';
+}
+
+li:last-child:hover {
+    color: rgb(143, 0, 0);
+    font-weight:800;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.contactDetails {
+    display: grid;
+    width: 70vw;
+    grid-template-columns: 2fr 1fr;
+    transition: 2s;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-content: space-around;
+    min-width: 500px;
+}
+
+.addressDetails {
+    background-color: rgba(255,255,255,0.8);
+    font-size: 30px;
+    padding: 20px;
+}
+
+.hoursContent {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+}
+
+.eventDetails {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+}
+
+.addressDetails h2, .hoursContent h2, .eventDetails h2 {
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+}
+
+.addressDetails ul, .hoursContent ul {
+    list-style-type: none;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: left;
+}
+
+.eventDetails {
+    font-size: 1.4rem;
+}
+
+.addressDetails li, .hoursContent li {
+    text-align: left;
+}
+
+.right {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+.right img {
+    height: 650px;
+    width: 650px;
+}
+
+.menuContainer {
+    display: grid;
+    width: 70vw;
+    height: 90vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "antipasti primi dessert"
+    "antipasti primi dessert"
+    "antipasti primi cocktail"
+    "secondi primi cocktail"
+    "secondi contorni cocktail"
+    "secondi contorni cocktail";
+}
+
+.menuContainer div {
+    background-color: rgba(255,255,255,0.8);  
+    text-align: center;
+    padding: 10px;
+    align-content: flex-start;
+}
+
+.menuContainer div h2 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 1rem;
+    color:rgb(143, 0, 0);
+}
+
+.menuContainer div h3 {
+    padding-top: 7px;
+    padding-bottom: 2px;
+    font-size: 0.8rem;
+    color: rgb(80, 79, 79)
+}
+
+.menuContainer div p {
+    padding-top: 3px;
+    padding-bottom: 7px;
+    font-size: 0.8rem;
+    color: rgb(80, 79, 79)
+}
+
+.antipasti {
+    grid-area: antipasti;
+}
+
+.secondi {
+    grid-area: secondi;
+}
+
+.primi {
+    grid-area: primi;
+}
+
+.contorni {
+    grid-area: contorni;
+}
+
+.dessert {
+    grid-area: dessert;
+}
+
+.cocktail {
+    grid-area: cocktail;
+}
+
+.contorni p {
+    margin-top: 4rem;
+}
