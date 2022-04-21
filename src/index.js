@@ -3,7 +3,7 @@ import {aboutUs} from './about.js';
 import {displayMenu} from './menu.js';
 import {contactUs} from './contact.js';
 import {openTable} from './book.js';
-import './style.css';
+// import '..dist/style.css';
 
 
 pageLoad();
