@@ -31,8 +31,8 @@ export function contactUs() {
     const right=document.createElement('div');
     right.className="right";
     right.innerHTML=`
-    <img src="../images/map.jpg" alt="map location">`;
-    container.style.backgroundImage="url('../images/bar.jpg')";
+    <img src="../dist/images/map.jpg" alt="map location">`;
+    container.style.backgroundImage="url('../dist/images/bar.jpg')";
     left.appendChild(address);
     left.appendChild(hours);
     left.appendChild(events);

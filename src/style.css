@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Neutraface' ;
-    src: url('../font/Neutra-Text-Book.otf');
+    src: url('../dist/font/Neutra-Text-Book.otf');
 }
 @font-face {
     font-family: 'Neutraface TF' ;
-    src: url('../font/Neutra-Text-TF-Book.otf');
+    src: url('../dist/font/Neutra-Text-TF-Book.otf');
 }
 @font-face {
     font-family: 'Neutraface Demi' ;
-    src: url('../font/Neutra-Text-TF-Demi.otf');
+    src: url('../dist/font/Neutra-Text-TF-Demi.otf');
 }
 
 *,
@@ -29,7 +29,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../images/caccio.jpg');
+    background-image: url('../dist/images/caccio.jpg');
     transition: background-image 1s;
     background-size: cover;
     padding: 50px;
@@ -198,7 +198,6 @@ li:hover {
     background-color: rgba(255,255,255,0.8);  
     text-align: center;
     padding: 10px;
-    align-content: flex-start;
 }
 
 .menuContainer div h2 {

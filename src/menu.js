@@ -114,5 +114,5 @@ export function displayMenu() {
     <p>cognac, nocino liqueur, borghetti</p>
     <h3>ESPRESSO MARTINI</h3>
     <p>house-infused vanilla vodka</p>`;
-    container.style.backgroundImage="url('../images/seafood.jpg')";
+    container.style.backgroundImage="url('../dist/images/seafood.jpg')";
 }
