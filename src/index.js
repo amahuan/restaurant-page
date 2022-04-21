@@ -3,6 +3,7 @@ import {aboutUs} from './about.js';
 import {displayMenu} from './menu.js';
 import {contactUs} from './contact.js';
 import {openTable} from './book.js';
+import {reloadPage} from './reload.js';
 // import '..dist/style.css';
 
 
@@ -12,6 +13,7 @@ const aboutClick=document.getElementById('about');
 const menuClick=document.getElementById('menu');
 const contactClick=document.getElementById('contact');
 const bookClick=document.getElementById('book');
+const reload=document.querySelector('.logo');
 
 
 aboutClick.addEventListener('click',()=>{
@@ -45,5 +47,7 @@ contactClick.addEventListener('click',()=>{
 })
 
 bookClick.addEventListener('click', openTable);
+
+reload.addEventListener('click', reloadPage);
 
 

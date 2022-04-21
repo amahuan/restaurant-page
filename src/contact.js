@@ -32,6 +32,7 @@ export function contactUs() {
     right.className="right";
     right.innerHTML=`
     <img src="../dist/images/map.jpg" alt="map location">`;
+    container.classList.add('notransition');
     container.style.backgroundImage="url('../dist/images/bar.jpg')";
     left.appendChild(address);
     left.appendChild(hours);
