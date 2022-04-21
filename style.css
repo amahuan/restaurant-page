@@ -30,10 +30,47 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url('../dist/images/caccio.jpg');
-    transition: background-image 1s;
+    transition: background-image 2s;
     background-size: cover;
     padding: 50px;
 }
+
+/* .container.notransition {
+    background-image: url('../dist/images/caccio.jpg');
+    transition: background-image 5s;
+    animation: none;
+}
+
+@keyframes chbg {
+    0%, 16.66% {
+        background:url('../dist/images/caccio.jpg');
+        background-size:cover
+    }
+    16.67% {
+        background:url('../dist/images/fish2.jpg');
+        background-size:cover
+    }
+    33.33% {
+        background:url('../dist/images/steak.jpg');
+        background-size:cover
+    }
+    50% {
+        background:url('../dist/images/dessert.jpg');
+        background-size:cover
+    }
+    66.66% {
+        background:url('../dist/images/morepasta.jpg');
+        background-size:cover
+    }
+    83.33% {
+        background:url('../dist/images/meatballs.jpg');
+        background-size:cover
+    }
+    100% {
+        background:url('../dist/images/charcuterie.jpg');
+        background-size:cover
+    }
+  } */
 
 .aboutDetails {
     width: 70vw;
@@ -67,6 +104,10 @@
     text-align: center;
     align-content: center;
     padding: 10px;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 .header {
