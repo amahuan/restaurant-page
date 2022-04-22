@@ -30,9 +30,7 @@ export function contactUs() {
     events.className="eventDetails";
     const right=document.createElement('div');
     right.className="right";
-    right.innerHTML=`
-    <img src="../dist/images/map.jpg" alt="map location">`;
-    container.classList.add('notransition');
+    right.innerHTML=`<img src="../dist/images/map.jpg" alt="map location">`;
     container.style.backgroundImage="url('../dist/images/bar.jpg')";
     left.appendChild(address);
     left.appendChild(hours);

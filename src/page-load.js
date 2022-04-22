@@ -1,6 +1,4 @@
-export function pageLoad(){
-    const header=document.createElement('div');
-    header.className="header";
+function loadLogo(){
     const logo=document.createElement('div');
     logo.className="logo";
     const restaurant1=document.createElement('h1');
@@ -9,6 +7,10 @@ export function pageLoad(){
     restaurant2.textContent="RISTORANTE NYC";
     logo.appendChild(restaurant1);
     logo.appendChild(restaurant2);
+    return logo;
+}
+
+function loadNav(){
     const links=document.createElement('div');
     links.className="links";
     const list=document.createElement('ul');
@@ -28,13 +30,20 @@ export function pageLoad(){
     list.appendChild(li2);
     list.appendChild(li3);
     list.appendChild(li4);
-    links.appendChild(list);
+    links.appendChild(list);  
+    return links;
+}
+
+export function pageLoad(){
     const container=document.createElement('div');
     container.className="container";
+    const header=document.createElement('div');
+    header.className="header";
+    const logo=loadLogo();
     header.appendChild(logo);
-    header.appendChild(links);
+    const navPanel=loadNav();
+    header.appendChild(navPanel);
     document.body.appendChild(header);
     document.body.appendChild(container);
 }
-
 

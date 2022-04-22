@@ -2,20 +2,16 @@ export function displayMenu() {
     const container=document.querySelector('.container');
     const menuContainer=document.createElement('div');
     menuContainer.className="menuContainer";
+    const options=['antipasti','secondi','primi','contorni','dessert','cocktail']
     for(let i=1;i<=6;i++){
         let div=document.createElement('div');
         div.className="menuBlock";
         div.setAttribute('id',i);
         div.textContent=i;
+        div.classList.add(options[i-1]);
         menuContainer.appendChild(div);
     }
     container.appendChild(menuContainer);
-    document.getElementById('1').classList.add('antipasti');
-    document.getElementById('2').classList.add('secondi');
-    document.getElementById('3').classList.add('primi');
-    document.getElementById('4').classList.add('contorni');
-    document.getElementById('5').classList.add('dessert');
-    document.getElementById('6').classList.add('cocktail');
     document.querySelector('.antipasti').innerHTML=`
     <h2>ANTIPASTI</h2>
     <h3>PIATTO DEL SALUMIERE</h3>
@@ -71,14 +67,14 @@ export function displayMenu() {
     <h3>BUCATINI CACIO E PEPE</h3>
     <p>cheese & pepper</p>
     <h3>RIGATONI ALL' AMATRICIANA</h3>
-    <p>guanciale, tomato, pecorino, red chili flake, red onion</p>`;
+    <p>guanciale, tomato, pecorino, red chili flake, red onion</p>
+    <p>*Gluten Free or Whole Wheat pasta available (excluding lasagna & gnocchi)</p>`;
     document.querySelector('.contorni').innerHTML=`
     <h2>CONTORNI<h2>
     <h3>SAUTÉED SPINACH</h3>
     <h3>ROASTED BRUSSELS SPROUTS, PANCETTA</h3>
     <h3>HERBED SAUTÉED POTATOES</h3>
-    <h3>SAUTÉED STRING BEANS</h3>
-    <p>*Gluten Free or Whole Wheat pasta available (excluding lasagna & gnocchi)</p>`;
+    <h3>SAUTÉED STRING BEANS</h3>`;
     document.querySelector('.dessert').innerHTML=`
     <h2>DESSERTS</h2>
     <h3>TORTA DI CIOCCOLATO</h3>
@@ -114,6 +110,5 @@ export function displayMenu() {
     <p>cognac, nocino liqueur, borghetti</p>
     <h3>ESPRESSO MARTINI</h3>
     <p>house-infused vanilla vodka</p>`;
-    container.classList.add('notransition');
     container.style.backgroundImage="url('../dist/images/seafood.jpg')";
 }

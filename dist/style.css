@@ -35,43 +35,6 @@
     padding: 50px;
 }
 
-/* .container.notransition {
-    background-image: url('../dist/images/caccio.jpg');
-    transition: background-image 5s;
-    animation: none;
-}
-
-@keyframes chbg {
-    0%, 16.66% {
-        background:url('../dist/images/caccio.jpg');
-        background-size:cover
-    }
-    16.67% {
-        background:url('../dist/images/fish2.jpg');
-        background-size:cover
-    }
-    33.33% {
-        background:url('../dist/images/steak.jpg');
-        background-size:cover
-    }
-    50% {
-        background:url('../dist/images/dessert.jpg');
-        background-size:cover
-    }
-    66.66% {
-        background:url('../dist/images/morepasta.jpg');
-        background-size:cover
-    }
-    83.33% {
-        background:url('../dist/images/meatballs.jpg');
-        background-size:cover
-    }
-    100% {
-        background:url('../dist/images/charcuterie.jpg');
-        background-size:cover
-    }
-  } */
-
 .aboutDetails {
     width: 70vw;
     transition: 2s;
@@ -79,8 +42,10 @@
 
 .aboutHeader {
     background-color: rgba(255,255,255,0.7);
-    font-size: 30px;
+    font-size: 2.2vh;
     padding: 20px;
+    color: rgb(143, 0, 0);
+    font-weight: 800;
 }
 
 .aboutContent {
@@ -90,12 +55,12 @@
 }
 
 .aboutContent h3 {
-    font-size: 1.2rem;
-    margin-top: 1.2rem;
+    font-size: 1.4vh;
+    margin-top: 3vh;
 }
 
 .aboutContent p {
-    font-size: 1.2rem;
+    font-size: 1.4vh;
 }
 
 .logo {
@@ -173,7 +138,7 @@ li:hover {
 
 .addressDetails {
     background-color: rgba(255,255,255,0.8);
-    font-size: 30px;
+    font-size: 2vh;
     padding: 20px;
 }
 
@@ -188,13 +153,14 @@ li:hover {
 }
 
 .addressDetails h2, .hoursContent h2, .eventDetails h2 {
-    font-size: 1.4rem;
+    font-size: 1.8vh;
     margin-top: 1.2rem;
+    color: rgb(143, 0, 0);
 }
 
 .addressDetails ul, .hoursContent ul {
     list-style-type: none;
-    font-size: 1.4rem;
+    font-size: 1.6vh;
     margin-top: 1.2rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -202,7 +168,7 @@ li:hover {
 }
 
 .eventDetails {
-    font-size: 1.4rem;
+    font-size: 1.6vh;
 }
 
 .addressDetails li, .hoursContent li {
@@ -216,49 +182,58 @@ li:hover {
     padding: 20px;
 }
 .right img {
-    height: 650px;
-    width: 650px;
+    height: 50vh;
+    width: 50vh;
 }
 
 .menuContainer {
     display: grid;
     width: 70vw;
+    min-height: 800px;
     height: 90vh;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-template-areas: 
+    "antipasti primi dessert"
+    "antipasti primi dessert"
     "antipasti primi dessert"
     "antipasti primi dessert"
     "antipasti primi cocktail"
     "secondi primi cocktail"
+    "secondi primi cocktail"
+    "secondi contorni cocktail"
+    "secondi contorni cocktail"
+    "secondi contorni cocktail"
     "secondi contorni cocktail"
     "secondi contorni cocktail";
+    background-color: rgba(255,255,255,0.8); 
 }
 
 .menuContainer div {
-    background-color: rgba(255,255,255,0.8);  
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    border: none;
+    height: min-content;
 }
 
 .menuContainer div h2 {
     padding-top: 7px;
     padding-bottom: 7px;
-    font-size: 1rem;
+    font-size: 1.5vh;
     color:rgb(143, 0, 0);
 }
 
 .menuContainer div h3 {
     padding-top: 7px;
     padding-bottom: 2px;
-    font-size: 0.8rem;
+    font-size: 1.2vh;
     color: rgb(80, 79, 79)
 }
 
 .menuContainer div p {
     padding-top: 3px;
     padding-bottom: 7px;
-    font-size: 0.8rem;
+    font-size: 1vh;
     color: rgb(80, 79, 79)
 }
 
